@@ -4,9 +4,8 @@
 yum -y install cloud-init
 
 # change cloud-init user name
-sed -i 's/name: fedora/name: ec2-user/g' /etc/cloud/cloud.cfg
-sed -i 's/gecos: Fedora Cloud User/gecos: EC2 Default User/g' /etc/cloud/cloud.cfg
-sed -i 's/distro: fedora/distro: rhel/g' /etc/cloud/cloud.cfg
+sed -i 's/name: cloud-user/name: ec2-user/g' /etc/cloud/cloud.cfg
+sed -i 's/gecos: Cloud User/gecos: EC2 Default User/g' /etc/cloud/cloud.cfg
 
 # lock login user
 passwd -l ec2-user
