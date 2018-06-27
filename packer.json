@@ -42,11 +42,9 @@
       "execute_command": "echo 'ec2-user' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "scripts": [
         "scripts/sshd.sh",
-        "scripts/install_dcos_prerequisites.sh",
         "scripts/ec2.sh",
         "scripts/cleanup.sh",
         "scripts/minimize.sh"
-        "scripts/shutdown.sh"
       ],
       "type": "shell"
     }
